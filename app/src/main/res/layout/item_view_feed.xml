@@ -6,17 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/ivPostFeed"
-        android:layout_width="0dp"
-        android:layout_height="500dp"
-        android:scaleType="centerCrop"
+    <FrameLayout
+        android:id="@+id/flVideoFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <VideoView
+        android:id="@+id/vidPostFeed"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@mipmap/ic_launcher_round" />
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/ivProfileFeed"
@@ -24,7 +29,7 @@
         android:layout_height="35dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/ivPostFeed"
+        app:layout_constraintBottom_toTopOf="@+id/flVideoFeed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_launcher_round" />
@@ -36,7 +41,7 @@
         android:layout_marginHorizontal="10dp"
         android:text="@string/titleFeed"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/ivPostFeed"
+        app:layout_constraintBottom_toTopOf="@+id/flVideoFeed"
         app:layout_constraintEnd_toStartOf="@+id/ivMoreFeed"
         app:layout_constraintStart_toEndOf="@+id/ivProfileFeed"
         app:layout_constraintTop_toTopOf="parent"
@@ -57,7 +62,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivPostFeed"
+        app:layout_constraintTop_toBottomOf="@+id/flVideoFeed"
         app:layout_constraintVertical_bias="0.25"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
@@ -108,7 +113,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:src="@drawable/ic_more_vert_feed"
-        app:layout_constraintBottom_toTopOf="@+id/ivPostFeed"
+        app:layout_constraintBottom_toTopOf="@+id/flVideoFeed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

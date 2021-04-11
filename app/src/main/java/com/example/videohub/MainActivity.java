@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ArrayList<Post> arrayList;
+    public static String PACKAGE_NAME;
 
 
     @Override
@@ -24,19 +25,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         arrayList=new ArrayList<>();
+        PACKAGE_NAME=getPackageName();
 
         recyclerView=findViewById(R.id.recyclerViewFeed);
 
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.drawable.post1,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.drawable.post2,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.drawable.post3,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.drawable.post1,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.drawable.post2,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.drawable.post3,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.raw.post1,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.raw.post2,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.raw.post3,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.raw.post1,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.raw.post3,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.raw.post2,"WOW!","What a view!"));
 
-        RecyclerAdapterFeed recyclerAdapterFeed= new RecyclerAdapterFeed(arrayList);
+        RecyclerAdapterFeed recyclerAdapterFeed= new RecyclerAdapterFeed(this,arrayList);
 
         recyclerView.setAdapter(recyclerAdapterFeed);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
 }
