@@ -41,7 +41,6 @@ public class RecyclerAdapterFeed extends RecyclerView.Adapter<RecyclerAdapterFee
         Post post = arrayList.get(position);
         String videoPath= "android.resource://" + MainActivity.PACKAGE_NAME +"/"+post.getPostImage();
         Uri uri= Uri.parse(videoPath);
-
         holder.title.setText(post.getTitle());
         holder.message.setText(post.getMessage());
         holder.profileImage.setImageResource(post.getProfileIcon());
