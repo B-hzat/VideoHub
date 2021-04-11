@@ -55,10 +55,11 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width=""
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Log-in"
+        android:background="#222222"
         android:textColor="#FD00029F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,10 +68,11 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width=""
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:textColor="#FD00029F"
+        android:background="#222222"
         android:text="REGISTER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

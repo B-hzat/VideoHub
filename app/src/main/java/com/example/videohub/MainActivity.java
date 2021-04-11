@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView=findViewById(R.id.recyclerViewFeed);
 
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.raw.post1,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.raw.post2,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.raw.post3,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.raw.post1,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.raw.post3,"WOW!","What a view!"));
-        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.raw.post2,"WOW!","What a view!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.raw.post1,"WOW!","What a video!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.raw.post2,"WOW!","What a video!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.raw.post3,"WOW!","What a video!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile2,R.raw.post1,"WOW!","What a video!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile1,R.raw.post3,"WOW!","What a video!"));
+        arrayList.add(new Post(arrayList.size()+1,R.drawable.profile3,R.raw.post2,"WOW!","What a video!"));
 
         RecyclerAdapterFeed recyclerAdapterFeed= new RecyclerAdapterFeed(this,arrayList);
 
