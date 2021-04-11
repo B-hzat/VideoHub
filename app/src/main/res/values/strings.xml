@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VideoHub</string>
+    <string name="titleFeed">title</string>
+    <string name="messageFeed">Message</string>
 </resources>
