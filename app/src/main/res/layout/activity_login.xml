@@ -24,10 +24,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
+        android:drawableLeft="@drawable/ic_id_login"
         android:ems="10"
         android:hint="Username"
-        android:drawableLeft="@drawable/ic_id_login"
         android:textAlignment="center"
+        android:textColorHint="#FD00029F"
+        android:textColor="#FD00029F"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -43,6 +45,8 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textAlignment="center"
+        android:textColor="#FD00029F"
+        android:textColorHint="#FD00029F"
         android:textSize="25dp"
         android:drawableLeft="@drawable/ic_lock_login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Log-in"
+        android:textColor="#FD00029F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
@@ -65,11 +70,11 @@
         android:layout_width=""
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-
-        android:text="REGISTER
-"
+        android:textColor="#FD00029F"
+        android:text="REGISTER"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
