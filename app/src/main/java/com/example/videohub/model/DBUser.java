@@ -10,12 +10,12 @@ public class DBUser {
 
     public DBUser(){userArrayList=new ArrayList<User>();}
 
-    public int AddUser(User user){
+    public static int AddUser(User user){
         DBUser.userArrayList.add(user);
         return 1;
     }
 
-    public ArrayList<User> GetAllUsers(){
+    public static ArrayList<User> GetAllUsers(){
         return userArrayList;
     }
 
