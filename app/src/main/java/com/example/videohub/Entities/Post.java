@@ -1,13 +1,32 @@
-package com.example.videohub.model;
+package com.example.videohub.Entities;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
+import org.jetbrains.annotations.NotNull;
+
+@Entity(tableName = "tblPost")
 public class Post {
 
+    @PrimaryKey(autoGenerate = true)
+    @NonNull
     private int postId;
+    @NonNull
+    private int likeCount;
+    @NonNull
     private int profileIcon;
+    @NonNull
     private int postImage;
+    @NonNull
     private String title;
     private String message;
 
+
+    public int getLikeCount() {return likeCount; }
+
+    public void setLikeCount(int likeCount) {this.likeCount = likeCount;}
 
     public int getPostId() {
         return postId;
@@ -56,6 +75,7 @@ public class Post {
         this.postImage = postImage;
         this.title = title;
         this.message = message;
+        this.likeCount=0;
     }
 
 }

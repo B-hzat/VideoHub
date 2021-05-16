@@ -1,8 +1,7 @@
 package com.example.videohub.model;
 
-import android.util.Log;
+import com.example.videohub.Entities.User;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class DBUser {

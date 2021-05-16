@@ -1,12 +1,21 @@
-package com.example.videohub.model;
+package com.example.videohub.Entities;
 
+import androidx.annotation.NonNull;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "tblUser")
 public class User {
 
 
-
+    @PrimaryKey(autoGenerate = true)
+    @NonNull
     int userID;
+    @NonNull
     String username;
+    @NonNull
     String email;
+    @NonNull
     String password;
 
     public User(int userID, String username, String email, String password) {

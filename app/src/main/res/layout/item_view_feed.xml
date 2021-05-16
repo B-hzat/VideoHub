@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:src="@drawable/ic_comment_feed"
-            app:layout_constraintStart_toEndOf="@+id/ivThumUpFeed"
+            app:layout_constraintStart_toEndOf="@+id/ivThumbUpFeed"
             tools:layout_editor_absoluteY="0dp" />
 
         <ImageView
@@ -86,14 +86,15 @@
             app:layout_constraintStart_toEndOf="@+id/ivCommentFeed"
             tools:layout_editor_absoluteY="0dp" />
 
-        <ImageView
-            android:id="@+id/ivThumUpFeed"
+        <com.like.LikeButton
+            android:id="@+id/ivThumbUpFeed"
+            app:icon_type="thumb"
+            app:icon_size="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/ic_thumb_up_feed"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView

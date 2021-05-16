@@ -1,4 +1,4 @@
-package com.example.videohub;
+package com.example.videohub.pages;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,10 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.example.videohub.model.Post;
+import com.example.videohub.R;
+import com.example.videohub.Entities.Post;
 import com.example.videohub.model.RecyclerAdapterFeed;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

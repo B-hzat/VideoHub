@@ -1,4 +1,4 @@
-package com.example.videohub;
+package com.example.videohub.pages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.videohub.R;
 import com.example.videohub.model.DBUser;
-import com.example.videohub.model.User;
+import com.example.videohub.Entities.User;
 
 public class RegisterActivity extends AppCompatActivity {
 

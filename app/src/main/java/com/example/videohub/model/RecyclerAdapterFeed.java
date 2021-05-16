@@ -13,7 +13,8 @@ import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.videohub.MainActivity;
+import com.example.videohub.Entities.Post;
+import com.example.videohub.pages.MainActivity;
 import com.example.videohub.R;
 
 import java.util.ArrayList;
