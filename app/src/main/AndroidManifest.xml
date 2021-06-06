@@ -15,7 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VideoHub"
         android:usesCleartextTraffic="true">
-        <activity android:name=".pages.CommentActivity"></activity>
+        <activity android:name=".pages.PostActivity" android:exported="true"></activity>
+        <activity android:name=".pages.TrendActivity" />
+        <activity android:name=".pages.NavigationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pages.CommentActivity" />
         <activity
             android:name=".pages.UploadActivity"
             android:exported="true" />

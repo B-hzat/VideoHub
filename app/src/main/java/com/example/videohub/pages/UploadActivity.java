@@ -17,6 +17,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -24,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.videohub.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -48,6 +50,7 @@ public class UploadActivity extends AppCompatActivity {
     String file_path=null;
     ProgressBar progressBar;
 
+    
 
 
     @Override
@@ -58,6 +61,29 @@ public class UploadActivity extends AppCompatActivity {
         btnUploadFile=findViewById(R.id.btnUploadFile);
         tvFileName=findViewById(R.id.tvFileName);
         progressBar=findViewById(R.id.pbUpload);
+        BottomNavigationView bottomNavigationView=findViewById(R.id.bottomNvPost);
+
+        bottomNavigationView.setSelectedItemId(R.id.navigationUpload);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.navigationHome:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.navigationTrends:
+                        startActivity(new Intent(getApplicationContext(),TrendActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.navigationUpload:
+                        return true;
+                }
+                return false;
+            }
+        });
+
 
 
         btnUpload.setOnClickListener(new View.OnClickListener() {

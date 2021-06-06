@@ -58,14 +58,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tbTitleFeed" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flVideoFeed"
         app:layout_constraintVertical_bias="0.25"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:ignore="MissingConstraints">
 
 
         <ImageView
@@ -88,13 +89,13 @@
 
         <com.like.LikeButton
             android:id="@+id/ivThumbUpFeed"
-            app:icon_type="thumb"
-            app:icon_size="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
+            app:icon_size="8dp"
+            app:icon_type="thumb"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
@@ -117,4 +118,15 @@
         app:layout_constraintBottom_toTopOf="@+id/flVideoFeed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCommenCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:hint="View All 20 Comments..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,13 +20,14 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/etMailLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:drawableLeft="@drawable/ic_id_login"
         android:ems="10"
-        android:hint="Username"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColor="#FD00029F"
         android:textColorHint="#FD00029F"
@@ -37,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
 
     <EditText
-        android:id="@+id/etPassword"
+        android:id="@+id/etPasswordLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -51,7 +52,7 @@
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/etMailLogin" />
 
     <Button
         android:id="@+id/btLogin"
@@ -89,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
 
     <TextView
         android:id="@+id/tvMessageError"
@@ -99,7 +100,7 @@
         android:text=""
         android:textSize="18dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/etUsername"
+        app:layout_constraintBottom_toTopOf="@+id/etMailLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"

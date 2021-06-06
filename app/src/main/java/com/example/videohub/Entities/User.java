@@ -17,6 +17,19 @@ public class User {
     String email;
     @NonNull
     String password;
+    @NonNull
+    String ImageUrl;
+
+    @NonNull
+    public String getImageUrl() {
+        return ImageUrl;
+    }
+
+    public void setImageUrl(@NonNull String imageUrl) {
+        ImageUrl = imageUrl;
+    }
+
+
 
     public User(int userID, String username, String email, String password) {
         this.userID = userID;
